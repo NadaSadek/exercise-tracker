@@ -1,0 +1,34 @@
+{
+  "name": "exercise-tracker",
+  "version": "1.0.0",
+  "description": "exercise tracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nada Sadek",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.2",
+    "mocha": "^4.1.0",
+    "mongodb": "^3.0.1",
+    "mongoose": "^4.13.9",
+    "node": "^9.4.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4",
+    "pug-bootstrap": "0.0.15",
+    "sinon": "^4.1.5",
+    "sinon-mongoose": "^2.0.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-config-dir": "^0.3.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodemon": "^0.5.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
