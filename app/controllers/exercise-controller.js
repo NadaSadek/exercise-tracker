@@ -13,16 +13,32 @@ exports.open_homepage = (req, res) => res.render('index');
 
 exports.get_all_users = (req, res) => {
   userModel.find({})
-    .exec()
-    .then(users => {
+  .exec()
+  .then(users => {
     res.json(users);
   });
+};
 
-  exports.get_whole_exercise_log = (req, res) => {
-    res.json(req.params.id);
-  };
+exports.create_new_user = (req, res) => {
+    userModel.save()
+    .then(user => {
+      res.json(user);
+    });
+};
 
-  exports.create_new_exercise = (req, res) => {
-    res.json(req.params.id);
-  };
+exports.get_whole_exercise_log = (req, res) => {
+    exerciseModel.save()
+    .then( => {
+      res.json(exercise);
+    });
+};
+
+exports.get_specific_exercise_log = (req, res) => {
+    const obj = {};
+    res.json(obj);
+};
+
+exports.create_new_exercise = (req, res) => {
+    const obj = {};
+    res.json(obj);
 };
