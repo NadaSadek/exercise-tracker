@@ -1,0 +1,27 @@
+extends ../node_modules/pug-bootstrap/_bootstrap
+block body
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Coda')
+  link(href='/../stylesheets/style.css', rel='stylesheet') 
+  title
+    | Exercise Tracker
+  h1.main-title Exercise Tracker
+  form(action="/api/exercise/new-user", method="post")
+    div.form-group
+      div.row
+        div.col
+          input(type="text", placeholder="username*",class="username-input form-control", name="url")
+        div.col
+          input(type="submit", class="btn-primary", value="create")
+  form(action="", method="post")
+    div.form-group
+      div.input
+        input(type="text", placeholder="userId*", class="exercise-input form-control", name="exercise")
+        | &nbsp;
+        input(type="text", placeholder="description*", class="exercise-input form-control", name="exercise")
+        | &nbsp;
+        input(type="text", placeholder="duration* in mins ", class="exercise-input form-control", name="exercise")
+        | &nbsp;
+        input(type="text", placeholder="data (yyyy-mm-dd)", class="exercise-input form-control", name="exercise")
+        | &nbsp;
+        input(type="submit", class="btn-primary", value="add")
+            

@@ -28,7 +28,7 @@ exports.create_new_user = (req, res) => {
 
 exports.get_whole_exercise_log = (req, res) => {
     exerciseModel.save()
-    .then( => {
+    .then(exercise => {
       res.json(exercise);
     });
 };
