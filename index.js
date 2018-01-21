@@ -19,7 +19,7 @@ db.on('connected', () => console.error('Mongoose default connection open to ' + 
 
 app.use(express.static(__dirname + '/views'));
 app.use(express.static(path.join(__dirname, '/public')));
-app.use('/scripts', express.static(__dirname + '/node_modules/bootstrap/dist/'));
+app.use('/scripts/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
